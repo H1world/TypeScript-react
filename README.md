@@ -1,1 +1,1 @@
-通过react了解ts的规则。
+通过react了解ts的规则
