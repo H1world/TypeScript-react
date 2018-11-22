@@ -20,7 +20,7 @@ class App extends React.Component{
           <li><Link to="/About">About</Link></li>
         </ul>
         <header className="App-header">
-          <h1 className="App-title">12</h1>
+          <h1 className="App-title">吃</h1>
         </header>
         <div className="Dome">
           什么？
