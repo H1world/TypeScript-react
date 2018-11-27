@@ -130,7 +130,8 @@ module.exports = {
         include: [path.join(__dirname, './../', 'src')],
         use:[
           'style-loader',
-          'css-loader',
+          // 'css-loader',
+          { loader: 'css-loader', options: { importLoaders: 1, modules: true } },
           'sass-loader',
         ]
       },
@@ -187,6 +188,7 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  modules:true
                 },
               },
               {

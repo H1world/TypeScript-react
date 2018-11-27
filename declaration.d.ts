@@ -1,0 +1,1 @@
+declare module '*.scss'; //添加第三方文声明文件 否则找不到scss文件。

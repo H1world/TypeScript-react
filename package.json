@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/react-router": "^4.0.32",
     "@types/react-router-dom": "^4.3.1",
+    "antd-mobile": "^2.2.6",
     "autoprefixer": "7.1.6",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
@@ -51,6 +52,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },

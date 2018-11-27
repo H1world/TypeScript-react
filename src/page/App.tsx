@@ -1,6 +1,5 @@
 import * as React from 'react';
-// import './App.css';
-import '../style/index.scss';
+import dd from "../style/index.scss";
 import { Link } from 'react-router-dom';
 
 class App extends React.Component{
@@ -14,7 +13,7 @@ class App extends React.Component{
     console.log(this.props);
     // const demo: any = this.props.match;
     return (
-      <div className="App">
+      <div className={dd.App}>
         <ul>
           <li><Link to="/">App</Link></li>
           <li><Link to="/About">About</Link></li>

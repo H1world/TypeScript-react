@@ -11,6 +11,9 @@
     "no-console": [
       false
     ],
+    "only-arrow-functions": [
+      false
+    ],
     "ordered-imports": false
   }
 }

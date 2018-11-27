@@ -1,11 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-// import App from './page/App';
-// import About from './page/about/about'; 
 import './style/index.css';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import './JS/rem';
 import AppRouter from './routers/router';
-// import AppState from './Mobx/AppState';
+import { Provider } from 'mobx-react';
+import AppState from './Mobx/AppState';
 import registerServiceWorker from './registerServiceWorker';
 
 // export default class Hello extends React.Component {
@@ -27,7 +26,9 @@ import registerServiceWorker from './registerServiceWorker';
 // }
 
 ReactDOM.render(
-  <AppRouter />,
+  <Provider {...AppState}>
+    <AppRouter />
+  </Provider>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
